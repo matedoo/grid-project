@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Learn about CSS GRID</title>
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+              $('.nav ul').toggleClass('active')
+            })
+          })
+        </script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+       <a href="/"><img class="logo" src="img/logo.png" alt="cat"></a>
+       <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <div class="nav">
+         <ul class="active">
+           <li><a href="" class="active">HOME</a></li>
+           <li><a href="/">ABOUT</a></li>
+           <li><a href="/">SERVICES</a></li>
+           <li><a href="/">GALLERY</a></li>
+           <li><a href="/">BLOG</a></li>
+           <li><a href="/">CONTACT</a></li>
+         </ul>
+        </div>
+      </div>
+    </header>
+    <div class="sectionone">
+     <div class="grid">
+       <div class="box box-1"><img src="img/kot1.jpg" alt=""></div>
+       <div class="box box-2"><img src="img/kot2.jpg" alt=""></div>
+       <div class="box box-3"><img src="img/kot3.jpg" alt=""></div>
+       <div class="box box-4"><img src="img/kot4.jpg" alt=""></div>
+       <div class="box box-5"><img src="img/kot5.jpg" alt=""></div>
+       <div class="box box-6"><img src="img/kot6.jpg" alt=""></div>
+       <div class="box box-7"><img src="img/kot7.jpg" alt=""></div>
+       <div class="box box-8"><img src="img/kot8.jpg" alt=""></div>
+     </div>
+    </div>
+    <script>
+    function toggleMenu() {
+     var menuBox = document.getElementById('nav');
+     if(nav.style.display == "block") { // if is menuBox displayed, hide it
+      nav.style.display = "none";
+        }
+      else { // if is menuBox hidden, display it
+        nav.style.display = "none";
+}
+}
+    </script>
+  </body>
+</html>
